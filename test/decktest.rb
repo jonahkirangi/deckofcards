@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "deck"
+require File.expand_path "../../lib/deckofcards", __FILE__
 
 describe "A deck of cards" do
   it "has 52 cards in total" do
