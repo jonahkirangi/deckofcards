@@ -20,12 +20,11 @@ class Deck
   @cards = []
 
   suits = ['SPADE', 'HEART', 'CLUB', 'DIAMOND']
-  ranks = [*2..10, 'J', 'Q', 'K', 'A']
+  ranks = [*2..10, 'JACK', 'QUEEN', 'KING', 'ACE']
     suits.each do |s|
       ranks.each do |r|
         @cards << Card.new(s,r).to_s
       end
     end
-
   end
 end
